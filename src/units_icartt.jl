@@ -38,6 +38,9 @@ const unit_aliases = Dict{String, AbstractArray{AbstractString,1}}();
 # time units
 @unit(days, "days", days, Quantity(24, Unitful.hr), false);
 
+# number of photons
+@unit(photons, "photons", number_of_photons, Int64(1), false)
+
 # volume units
 @unit(std_m, "std m", m_at_stp, Quantity(1, Unitful.m), false);
 
